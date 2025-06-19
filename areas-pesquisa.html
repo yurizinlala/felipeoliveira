@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de Pesquisa - Prof. Felipe Oliveira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-widget">
+        <button class="accessibility-toggle" aria-label="Opções de acessibilidade">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="accessibility-options">
+            <button class="font-size-increase" aria-label="Aumentar fonte">
+                <i class="fas fa-plus"></i> Aumentar fonte
+            </button>
+            <button class="font-size-decrease" aria-label="Diminuir fonte">
+                <i class="fas fa-minus"></i> Diminuir fonte
+            </button>
+            <button class="contrast-toggle" aria-label="Alto contraste">
+                <i class="fas fa-adjust"></i> Alto contraste
+            </button>
+            <button class="reset-accessibility" aria-label="Resetar acessibilidade">
+                <i class="fas fa-undo"></i> Resetar
+            </button>
+        </div>
+    </div>
+
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Felipe Oliveira</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html" class="active">Áreas de Pesquisa</a></li>
+                    <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título e Descrição da Página -->
+    <section class="page-header section-animated">
+        <div class="container">
+            <h1 class="title-animation text-center">Áreas de Pesquisa</h1>
+            <p class="page-description">Conheça as principais áreas de pesquisa, projetos, publicações e orientações desenvolvidas pelo Prof. Felipe Oliveira e sua equipe.</p>
+            
+            <!-- Navegação Interna -->
+            <div class="research-nav fade-in">
+                <a href="#areas" class="research-nav-item btn-style">Áreas de Pesquisa</a>
+                <a href="#projetos" class="research-nav-item btn-style">Projetos</a>
+                <a href="#publicacoes" class="research-nav-item btn-style">Publicações</a>
+                <a href="#orientacoes" class="research-nav-item btn-style">Orientações</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Pesquisa -->
+    <section id="areas" class="research-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Áreas de Pesquisa</h2>
+            
+            <div class="research-area fade-in">
+                <h3 class="text-left">Sistemas Embarcados</h3>
+                <p class="text-left">Sistemas embarcados são sistemas computacionais dedicados, projetados para executar uma ou algumas funções específicas, geralmente com restrições de processamento, memória e energia. Estes sistemas estão presentes em diversos dispositivos do nosso cotidiano, desde eletrodomésticos até equipamentos médicos e industriais.</p>
+                
+                <p class="text-left">Nossa pesquisa nesta área foca no desenvolvimento de soluções embarcadas eficientes, confiáveis e seguras, utilizando diversas plataformas como Arduino, Raspberry Pi, ESP32 e microcontroladores dedicados. Trabalhamos com aplicações que vão desde automação residencial até sistemas industriais complexos.</p>
+                
+                <div class="research-topics">
+                    <h4 class="text-left">Tópicos de Pesquisa:</h4>
+                    <ul>
+                        <li>Desenvolvimento de firmware para microcontroladores</li>
+                        <li>Otimização de consumo energético em sistemas embarcados</li>
+                        <li>Interfaces homem-máquina para sistemas embarcados</li>
+                        <li>Sistemas embarcados para aplicações médicas</li>
+                        <li>Segurança em sistemas embarcados</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="research-area fade-in delay-1">
+                <h3 class="text-left">Sistemas de Tempo Real</h3>
+                <p class="text-left">Sistemas de tempo real são aqueles em que a correção do sistema depende não apenas dos resultados lógicos da computação, mas também do tempo em que os resultados são produzidos. Estes sistemas são essenciais em aplicações críticas onde o não cumprimento de prazos pode levar a consequências graves.</p>
+                
+                <p class="text-left">Nossa pesquisa nesta área concentra-se no desenvolvimento de algoritmos de escalonamento, análise de escalonabilidade, e implementação de sistemas operacionais de tempo real. Trabalhamos com aplicações que exigem alta confiabilidade e previsibilidade temporal.</p>
+                
+                <div class="research-topics">
+                    <h4 class="text-left">Tópicos de Pesquisa:</h4>
+                    <ul>
+                        <li>Algoritmos de escalonamento para sistemas de tempo real</li>
+                        <li>Análise de escalonabilidade e desempenho</li>
+                        <li>Sistemas operacionais de tempo real (FreeRTOS, RTEMS)</li>
+                        <li>Middleware para sistemas distribuídos de tempo real</li>
+                        <li>Verificação formal de sistemas de tempo real</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="research-area fade-in delay-2">
+                <h3 class="text-left">Internet das Coisas (IoT)</h3>
+                <p class="text-left">A Internet das Coisas (IoT) refere-se à rede de dispositivos físicos conectados à internet, capazes de coletar e trocar dados. Esta área combina sistemas embarcados, redes de comunicação e análise de dados para criar soluções inteligentes e conectadas.</p>
+                
+                <p class="text-left">Nossa pesquisa em IoT abrange desde o desenvolvimento de dispositivos conectados até a implementação de plataformas para gerenciamento e análise de dados. Trabalhamos com aplicações em cidades inteligentes, agricultura de precisão, monitoramento ambiental e automação industrial.</p>
+                
+                <div class="research-topics">
+                    <h4 class="text-left">Tópicos de Pesquisa:</h4>
+                    <ul>
+                        <li>Protocolos de comunicação para IoT (MQTT, CoAP, LoRaWAN)</li>
+                        <li>Segurança e privacidade em dispositivos IoT</li>
+                        <li>Edge computing para aplicações IoT</li>
+                        <li>Plataformas de gerenciamento de dispositivos IoT</li>
+                        <li>Aplicações de IoT em cidades inteligentes e agricultura</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="research-area fade-in delay-3">
+                <h3 class="text-left">Automação e Robótica</h3>
+                <p class="text-left">A automação e robótica envolvem o desenvolvimento de sistemas que podem executar tarefas com mínima intervenção humana. Esta área combina sistemas embarcados, controle, sensoriamento e atuação para criar soluções autônomas ou semi-autônomas.</p>
+                
+                <p class="text-left">Nossa pesquisa nesta área foca no desenvolvimento de sistemas robóticos e de automação para aplicações industriais, agrícolas e de serviços. Trabalhamos com robôs móveis, manipuladores, drones e sistemas de automação industrial.</p>
+                
+                <div class="research-topics">
+                    <h4 class="text-left">Tópicos de Pesquisa:</h4>
+                    <ul>
+                        <li>Controle de robôs móveis e manipuladores</li>
+                        <li>Sistemas de navegação autônoma</li>
+                        <li>Visão computacional para robótica</li>
+                        <li>Automação industrial e Indústria 4.0</li>
+                        <li>Robótica colaborativa e interação homem-robô</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projects-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Projetos</h2>
+            
+            <div class="project-filters fade-in">
+                <button class="research-nav-item btn-style active" data-filter="all">Todos</button>
+                <button class="research-nav-item btn-style" data-filter="pesquisa">Pesquisa</button>
+                <button class="research-nav-item btn-style" data-filter="ensino">Ensino</button>
+                <button class="research-nav-item btn-style" data-filter="extensao">Extensão</button>
+            </div>
+            
+            <div class="projects-list">
+                <div class="project-item fade-in" data-category="pesquisa">
+                    <span class="project-category">Pesquisa</span>
+                    <span class="project-status status-active">Em andamento</span>
+                    <h3 class="project-title text-left">Sistema de Monitoramento Ambiental com IoT</h3>
+                    <p class="project-description text-left">Desenvolvimento de uma rede de sensores sem fio para monitoramento de variáveis ambientais como temperatura, umidade, qualidade do ar e nível de ruído em ambientes urbanos. Os dados são coletados em tempo real e disponibilizados em uma plataforma web para análise e tomada de decisão.</p>
+                    <p class="project-team text-left">Equipe: Prof. Felipe Dennis (Coordenador), 3 alunos de graduação, 1 aluno de mestrado</p>
+                </div>
+                
+                <div class="project-item fade-in delay-1" data-category="pesquisa">
+                    <span class="project-category">Pesquisa</span>
+                    <span class="project-status status-active">Em andamento</span>
+                    <h3 class="project-title text-left">Algoritmos de Escalonamento para Sistemas de Tempo Real Multicore</h3>
+                    <p class="project-description text-left">Pesquisa e desenvolvimento de novos algoritmos de escalonamento para sistemas de tempo real em plataformas multicore, visando melhorar a utilização dos recursos computacionais e garantir o cumprimento de prazos em aplicações críticas.</p>
+                    <p class="project-team text-left">Equipe: Prof. Felipe Dennis (Coordenador), 2 alunos de mestrado</p>
+                </div>
+                
+                <div class="project-item fade-in delay-2" data-category="ensino">
+                    <span class="project-category">Ensino</span>
+                    <span class="project-status status-active">Em andamento</span>
+                    <h3 class="project-title text-left">Laboratório Virtual de Sistemas Embarcados</h3>
+                    <p class="project-description text-left">Desenvolvimento de uma plataforma online para ensino de sistemas embarcados, com simuladores, tutoriais interativos e exercícios práticos. O projeto visa facilitar o aprendizado de programação de microcontroladores e desenvolvimento de sistemas embarcados.</p>
+                    <p class="project-team text-left">Equipe: Prof. Felipe Dennis (Coordenador), 4 alunos de graduação</p>
+                </div>
+                
+                <div class="project-item fade-in delay-3" data-category="extensao">
+                    <span class="project-category">Extensão</span>
+                    <span class="project-status status-active">Em andamento</span>
+                    <h3 class="project-title text-left">Automação para Agricultura Familiar</h3>
+                    <p class="project-description text-left">Desenvolvimento de soluções de baixo custo para automação de processos agrícolas em pequenas propriedades rurais, incluindo sistemas de irrigação automatizada, monitoramento de solo e clima, e controle de estufas.</p>
+                    <p class="project-team text-left">Equipe: Prof. Felipe Dennis (Coordenador), 3 alunos de graduação, 1 técnico</p>
+                </div>
+                
+                <div class="project-item fade-in delay-4" data-category="pesquisa">
+                    <span class="project-category">Pesquisa</span>
+                    <span class="project-status status-completed">Concluído</span>
+                    <h3 class="project-title text-left">Segurança em Dispositivos IoT para Ambientes Domésticos</h3>
+                    <p class="project-description text-left">Análise de vulnerabilidades e desenvolvimento de soluções de segurança para dispositivos IoT em ambientes domésticos, com foco em protocolos de comunicação seguros e técnicas de autenticação leves.</p>
+                    <p class="project-team text-left">Equipe: Prof. Felipe Dennis (Coordenador), 2 alunos de graduação</p>
+                </div>
+                
+                <div class="project-item fade-in delay-5" data-category="extensao">
+                    <span class="project-category">Extensão</span>
+                    <span class="project-status status-completed">Concluído</span>
+                    <h3 class="project-title text-left">Oficinas de Robótica para Escolas Públicas</h3>
+                    <p class="project-description text-left">Realização de oficinas de robótica educacional em escolas públicas, utilizando kits de baixo custo e materiais recicláveis para introduzir conceitos de programação, eletrônica e mecânica para alunos do ensino fundamental e médio.</p>
+                    <p class="project-team text-left">Equipe: Prof. Felipe Dennis (Coordenador), 5 alunos de graduação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publicações -->
+    <section id="publicacoes" class="publications-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Publicações</h2>
+            
+            <div class="publication-filters fade-in">
+                <button class="research-nav-item btn-style active" data-filter="all">Todas</button>
+                <button class="research-nav-item btn-style" data-filter="artigos">Artigos</button>
+                <button class="research-nav-item btn-style" data-filter="conferencias">Conferências</button>
+                <button class="research-nav-item btn-style" data-filter="capitulos">Capítulos de Livros</button>
+            </div>
+            
+            <div class="publications-list">
+                <div class="publication-item fade-in" data-category="artigos">
+                    <h3 class="publication-title text-left">Análise de Desempenho de Sistemas Embarcados em Aplicações de Tempo Real</h3>
+                    <p class="publication-authors text-left">Oliveira, F. D. M.; Silva, J.; Santos, M.</p>
+                    <p class="publication-journal text-left">Revista Brasileira de Sistemas Embarcados, v. 15, n. 2, p. 45-58</p>
+                    <p class="publication-year text-left">2024</p>
+                </div>
+                
+                <div class="publication-item fade-in delay-1" data-category="conferencias">
+                    <h3 class="publication-title text-left">Implementação de Algoritmos de Escalonamento em Sistemas de Tempo Real</h3>
+                    <p class="publication-authors text-left">Oliveira, F. D. M.; Costa, A.; Pereira, L.</p>
+                    <p class="publication-journal text-left">Anais da Conferência Brasileira de Sistemas Embarcados, São Paulo</p>
+                    <p class="publication-year text-left">2023</p>
+                </div>
+                
+                <div class="publication-item fade-in delay-2" data-category="artigos">
+                    <h3 class="publication-title text-left">IoT Aplicada a Sistemas de Monitoramento Ambiental</h3>
+                    <p class="publication-authors text-left">Oliveira, F. D. M.; Souza, R.; Lima, T.</p>
+                    <p class="publication-journal text-left">Journal of Internet of Things, v. 8, n. 3, p. 112-128</p>
+                    <p class="publication-year text-left">2023</p>
+                </div>
+                
+                <div class="publication-item fade-in delay-3" data-category="capitulos">
+                    <h3 class="publication-title text-left">Sistemas Embarcados para Aplicações Médicas: Desafios e Oportunidades</h3>
+                    <p class="publication-authors text-left">Oliveira, F. D. M.; Martins, C.</p>
+                    <p class="publication-journal text-left">In: Tecnologias para Saúde Digital, Editora Acadêmica, p. 78-95</p>
+                    <p class="publication-year text-left">2022</p>
+                </div>
+                
+                <div class="publication-item fade-in delay-4" data-category="conferencias">
+                    <h3 class="publication-title text-left">Análise de Segurança em Dispositivos IoT para Ambientes Domésticos</h3>
+                    <p class="publication-authors text-left">Oliveira, F. D. M.; Almeida, P.</p>
+                    <p class="publication-journal text-left">Anais do Simpósio Brasileiro de Segurança da Informação, Rio de Janeiro</p>
+                    <p class="publication-year text-left">2022</p>
+                </div>
+                
+                <div class="publication-item fade-in delay-5" data-category="artigos">
+                    <h3 class="publication-title text-left">Middleware para Sistemas de Tempo Real em Plataformas Heterogêneas</h3>
+                    <p class="publication-authors text-left">Oliveira, F. D. M.; Ferreira, C.</p>
+                    <p class="publication-journal text-left">Journal of Real-Time Systems, v. 12, n. 4, p. 215-230</p>
+                    <p class="publication-year text-left">2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orientações -->
+    <section id="orientacoes" class="orientations-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Orientações</h2>
+            
+            <div class="orientation-filters fade-in">
+                <button class="research-nav-item btn-style active" data-filter="all">Todas</button>
+                <button class="research-nav-item btn-style" data-filter="andamento">Em Andamento</button>
+                <button class="research-nav-item btn-style" data-filter="concluidas">Concluídas</button>
+            </div>
+            
+            <div class="orientations-list">
+                <div class="orientation-item fade-in" data-category="andamento">
+                    <span class="orientation-type">Mestrado</span>
+                    <h3 class="orientation-title text-left">Desenvolvimento de um Framework para Sistemas IoT com Garantias de Tempo Real</h3>
+                    <p class="orientation-student text-left">Aluno: João Silva</p>
+                    <p class="orientation-period text-left">2023 - Atual</p>
+                    <p class="orientation-description text-left">Pesquisa e desenvolvimento de um framework para facilitar a implementação de sistemas IoT com garantias de tempo real, focando em aplicações críticas como monitoramento de saúde e automação industrial.</p>
+                </div>
+                
+                <div class="orientation-item fade-in delay-1" data-category="andamento">
+                    <span class="orientation-type">TCC</span>
+                    <h3 class="orientation-title text-left">Sistema de Monitoramento de Qualidade do Ar com ESP32</h3>
+                    <p class="orientation-student text-left">Aluno: Maria Santos</p>
+                    <p class="orientation-period text-left">2024 - Atual</p>
+                    <p class="orientation-description text-left">Desenvolvimento de um sistema de baixo custo para monitoramento da qualidade do ar em ambientes internos, utilizando ESP32 e sensores de partículas, CO2, temperatura e umidade.</p>
+                </div>
+                
+                <div class="orientation-item fade-in delay-2" data-category="andamento">
+                    <span class="orientation-type">Iniciação Científica</span>
+                    <h3 class="orientation-title text-left">Algoritmos de Aprendizado de Máquina para Sistemas Embarcados</h3>
+                    <p class="orientation-student text-left">Aluno: Pedro Oliveira</p>
+                    <p class="orientation-period text-left">2023 - Atual</p>
+                    <p class="orientation-description text-left">Estudo e implementação de algoritmos de aprendizado de máquina otimizados para execução em sistemas embarcados com recursos limitados, focando em aplicações de classificação e detecção de anomalias.</p>
+                </div>
+                
+                <div class="orientation-item fade-in delay-3" data-category="concluidas">
+                    <span class="orientation-type">TCC</span>
+                    <h3 class="orientation-title text-left">Sistema de Automação Residencial com ESP32</h3>
+                    <p class="orientation-student text-left">Aluno: Ana Costa</p>
+                    <p class="orientation-period text-left">2022 - 2023</p>
+                    <p class="orientation-description text-left">Desenvolvimento de um sistema de automação residencial utilizando ESP32, com controle via aplicativo móvel e integração com assistentes virtuais.</p>
+                </div>
+                
+                <div class="orientation-item fade-in delay-4" data-category="concluidas">
+                    <span class="orientation-type">Mestrado</span>
+                    <h3 class="orientation-title text-left">Middleware para Sistemas de Tempo Real em Plataformas Heterogêneas</h3>
+                    <p class="orientation-student text-left">Aluno: Carlos Ferreira</p>
+                    <p class="orientation-period text-left">2020 - 2022</p>
+                    <p class="orientation-description text-left">Desenvolvimento de um middleware para facilitar a comunicação e sincronização entre sistemas de tempo real em plataformas heterogêneas, com foco em aplicações industriais.</p>
+                </div>
+                
+                <div class="orientation-item fade-in delay-5" data-category="concluidas">
+                    <span class="orientation-type">TCC</span>
+                    <h3 class="orientation-title text-left">Robô Seguidor de Linha com Arduino</h3>
+                    <p class="orientation-student text-left">Aluno: Lucas Oliveira</p>
+                    <p class="orientation-period text-left">2021 - 2022</p>
+                    <p class="orientation-description text-left">Projeto e implementação de um robô seguidor de linha utilizando Arduino, com algoritmos de controle PID e detecção de obstáculos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Felipe Oliveira</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                    <a href="admin.html" class="btn btn-sm btn-outline login-btn">Login</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/" target="_blank">Departamento</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/laboratorios/" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/7824107454547370" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> felipedennis@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Campus Avançado da UERN Natal</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/uernnatal/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="http://lattes.cnpq.br/7105829200193069" target="_blank" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Felipe Oliveira - Todos os direitos reservados</p>
+                <p class="footer-credits">Desenvolvido com amor por Jefferson da Silva Melo (frontend), Lucas Vítor Florêncio Borba (fullstack) e Yuri Dantas da Silva (backend)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

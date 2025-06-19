@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Prof. Felipe Oliveira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-widget">
+        <button class="accessibility-toggle" aria-label="Opções de acessibilidade">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="accessibility-options">
+            <button class="font-size-increase" aria-label="Aumentar fonte">
+                <i class="fas fa-plus"></i> Aumentar fonte
+            </button>
+            <button class="font-size-decrease" aria-label="Diminuir fonte">
+                <i class="fas fa-minus"></i> Diminuir fonte
+            </button>
+            <button class="contrast-toggle" aria-label="Alto contraste">
+                <i class="fas fa-adjust"></i> Alto contraste
+            </button>
+            <button class="reset-accessibility" aria-label="Resetar acessibilidade">
+                <i class="fas fa-undo"></i> Resetar
+            </button>
+        </div>
+    </div>
+
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Felipe Oliveira</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                    <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-header section-animated">
+        <div class="container">
+            <h1 class="title-animation text-center">Contato</h1>
+            <p class="page-description">Entre em contato com o professor Felipe Dennis para dúvidas, colaborações ou agendamento de reuniões.</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contact-section section-animated">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h2>Informações de Contato</h2>
+                    <div class="info-item align-left">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>felipedennis@uern.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item align-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>Departamento de Computação</p>
+                            <p>Universidade do Estado do Rio Grande do Norte (UERN)</p>
+                            <p>Av. Dr. João Medeiros Filho, 3419 - Potengi</p>
+                            <p>Natal, RN - Brasil - 59122-365</p>
+                        </div>
+                    </div>
+                    <div class="info-item align-left">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 7h às 12h</p>
+                            <p>Agendar por email</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container fade-in delay-2">
+                    <h2>Envie uma Mensagem</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><span>Enviar Mensagem</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes Sociais -->
+    <section class="social-section section-animated">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Redes Sociais</h2>
+                <div class="section-divider centered"></div>
+            </div>
+            <div class="social-icons-large">
+                <a href="https://www.instagram.com/uernnatal/" target="_blank" class="social-icon-circle fade-in">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://lattes.cnpq.br/7105829200193069" target="_blank" class="social-icon-circle fade-in delay-1">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://portal.uern.br/" target="_blank" class="social-icon-circle fade-in delay-2">
+                    <i class="fas fa-university"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa ou Localização -->
+    <section class="location-section section-animated">
+        <div class="container">
+            <h2>Como Chegar</h2>
+            <div class="map-container fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.0261702422387!2d-35.2533323!3d-5.7603088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aa6b086aaaab%3A0x5d8f5a8c8414de8!2sAv.%20Dr.%20Jo%C3%A3o%20Medeiros%20Filho%2C%203419%20-%20Potengi%2C%20Natal%20-%20RN%2C%2059122-365!5e0!3m2!1spt-BR!2sbr!4v1687186223456!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0; border-radius:var(--border-radius-md);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-info fade-in delay-1">
+                <h3>Departamento de Computação - UERN Natal</h3>
+                <p>O Departamento de Computação está localizado no Campus Avançado da UERN em Natal. O Laboratório LUMEN encontra-se no bloco de laboratórios do departamento.</p>
+                <p>Para agendar uma visita ou reunião, entre em contato por email.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Institucionais -->
+    <section class="institutional-links section-animated">
+        <div class="container">
+            <h2>Links Institucionais</h2>
+            <div class="institutional-cards">
+                <div class="institutional-card fade-in">
+                    <div class="institutional-icon circle-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>UERN</h3>
+                    <p>Portal da Universidade do Estado do Rio Grande do Norte</p>
+                    <a href="https://portal.uern.br/" target="_blank" class="btn btn-outline"><span>Acessar</span></a>
+                </div>
+                <div class="institutional-card fade-in delay-1">
+                    <div class="institutional-icon circle-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Departamento</h3>
+                    <p>Departamento de Computação da UERN Natal</p>
+                    <a href="https://portal.uern.br/natal/dcc/" target="_blank" class="btn btn-outline"><span>Acessar</span></a>
+                </div>
+                <div class="institutional-card fade-in delay-2">
+                    <div class="institutional-icon circle-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>GSET</h3>
+                    <p>Grupo de Sistemas Embarcados e de Tempo Real</p>
+                    <a href="http://dgp.cnpq.br/dgp/espelhogrupo/7824107454547370" target="_blank" class="btn btn-outline"><span>Acessar</span></a>
+                </div>
+                <div class="institutional-card fade-in delay-3">
+                    <div class="institutional-icon circle-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>LUMEN</h3>
+                    <p>Laboratório de Sistemas Embarcados e de Tempo Real</p>
+                    <a href="laboratorio.html" class="btn btn-outline"><span>Acessar</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Felipe Oliveira</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                    <a href="admin.html" class="btn btn-sm btn-outline login-btn">Login</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/" target="_blank">Departamento</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/laboratorios/" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/7824107454547370" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> felipedennis@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Campus Avançado da UERN Natal</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/uernnatal/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="http://lattes.cnpq.br/7105829200193069" target="_blank" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Felipe Oliveira - Todos os direitos reservados</p>
+                <p class="footer-credits">Desenvolvido com amor por Jefferson da Silva Melo (frontend), Lucas Vítor Florêncio Borba (fullstack) e Yuri Dantas da Silva (backend)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

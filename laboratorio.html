@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório LUMEN - Prof. Felipe Oliveira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-widget">
+        <button class="accessibility-toggle" aria-label="Opções de acessibilidade">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="accessibility-options">
+            <button class="font-size-increase" aria-label="Aumentar fonte">
+                <i class="fas fa-plus"></i> Aumentar fonte
+            </button>
+            <button class="font-size-decrease" aria-label="Diminuir fonte">
+                <i class="fas fa-minus"></i> Diminuir fonte
+            </button>
+            <button class="contrast-toggle" aria-label="Alto contraste">
+                <i class="fas fa-adjust"></i> Alto contraste
+            </button>
+            <button class="reset-accessibility" aria-label="Resetar acessibilidade">
+                <i class="fas fa-undo"></i> Resetar
+            </button>
+        </div>
+    </div>
+
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Felipe Oliveira</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                    <li><a href="laboratorio.html" class="active">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner do Laboratório -->
+    <section class="page-header section-animated">
+        <div class="container">
+            <h1 class="title-animation text-center">Laboratório LUMEN</h1>
+            <p class="page-description">Laboratório de Sistemas Embarcados e de Tempo Real - Um espaço dedicado à pesquisa, desenvolvimento e ensino nas áreas de sistemas embarcados, sistemas de tempo real, automação e Internet das Coisas (IoT).</p>
+        </div>
+    </section>
+
+    <!-- Sobre o Laboratório -->
+    <section class="lab-about section-animated">
+        <div class="container">
+            <div class="lab-grid">
+                <div class="lab-content fade-in">
+                    <h2 class="text-left">Sobre o LUMEN</h2>
+                    <p class="text-left">O Laboratório de Sistemas Embarcados e de Tempo Real (LUMEN) é um espaço dedicado à pesquisa, desenvolvimento e ensino nas áreas de sistemas embarcados, sistemas de tempo real, automação e Internet das Coisas (IoT).</p>
+                    
+                    <p class="text-left">Fundado em 2020 pelo professor Felipe Dennis Mendonça de Oliveira, o LUMEN tem como objetivo principal proporcionar infraestrutura para o desenvolvimento de projetos práticos, integrando teoria e prática na formação dos estudantes e na realização de pesquisas aplicadas.</p>
+                    
+                    <p class="text-left">O laboratório está vinculado ao Departamento de Computação da Universidade do Estado do Rio Grande do Norte (UERN) e atende principalmente aos cursos de Computação e Ciência e Tecnologia.</p>
+                    
+                    <div class="lab-social">
+                        <a href="https://www.instagram.com/uernnatal/" class="btn btn-primary" target="_blank">
+                            <span><i class="fab fa-instagram"></i> Siga no Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infraestrutura -->
+    <section class="lab-infrastructure section-animated">
+        <div class="container">
+            <h2 class="text-left">Infraestrutura</h2>
+            <div class="accordion">
+                <div class="accordion-item fade-in">
+                    <button class="accordion-header">
+                        <h3>Equipamentos</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Computadores para desenvolvimento</li>
+                            <li>Kits de desenvolvimento (Arduino, Raspberry Pi, ESP32)</li>
+                            <li>Osciloscópios e multímetros</li>
+                            <li>Impressora 3D</li>
+                            <li>Componentes eletrônicos diversos</li>
+                            <li>Sensores e atuadores para projetos IoT</li>
+                            <li>Equipamentos para testes e validação</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item fade-in delay-1">
+                    <button class="accordion-header">
+                        <h3>Ferramentas</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Ambiente de desenvolvimento integrado</li>
+                            <li>Ferramentas de simulação</li>
+                            <li>Ferramentas de prototipagem</li>
+                            <li>Equipamentos para soldagem e montagem</li>
+                            <li>Software para design de PCB</li>
+                            <li>Ferramentas para análise de desempenho</li>
+                            <li>Software para modelagem 3D</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item fade-in delay-2">
+                    <button class="accordion-header">
+                        <h3>Espaços</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Área de desenvolvimento</li>
+                            <li>Área de prototipagem</li>
+                            <li>Sala de reuniões</li>
+                            <li>Espaço para aulas práticas</li>
+                            <li>Área de testes</li>
+                            <li>Espaço para apresentações</li>
+                            <li>Área de armazenamento de componentes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos do Laboratório -->
+    <section class="lab-projects section-animated">
+        <div class="container">
+            <h2 class="text-left">Projetos em Desenvolvimento</h2>
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sistema IoT para Agricultura</h3>
+                        <p>Desenvolvimento de soluções baseadas em Internet das Coisas para monitoramento e automação de processos agrícolas, com foco em sustentabilidade e eficiência no uso de recursos.</p>
+                        <a href="areas-pesquisa.html#projetos" class="card-link">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card fade-in delay-1">
+                    <div class="card-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Automação Residencial</h3>
+                        <p>Criação de soluções de automação residencial de baixo custo, utilizando tecnologias embarcadas para controle de iluminação, temperatura, segurança e outros aspectos do ambiente doméstico.</p>
+                        <a href="areas-pesquisa.html#projetos" class="card-link">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card fade-in delay-2">
+                    <div class="card-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Laboratório Virtual</h3>
+                        <p>Desenvolvimento de um ambiente virtual para ensino de sistemas embarcados, permitindo que estudantes realizem experimentos práticos remotamente através de simuladores e acesso remoto a hardware.</p>
+                        <a href="areas-pesquisa.html#projetos" class="card-link">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interessado em participar -->
+    <section class="interest-section section-animated">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Interessado em participar?</h2>
+                <div class="section-divider centered"></div>
+            </div>
+            <p class="text-center">O LUMEN está sempre aberto a novos membros interessados em sistemas embarcados e de tempo real. Entre em contato para conhecer as oportunidades disponíveis.</p>
+            <div class="center-button">
+                <a href="contato.html" class="btn btn-primary"><span>Entre em Contato</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Felipe Oliveira</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                    <a href="admin.html" class="btn btn-sm btn-outline login-btn">Login</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/" target="_blank">Departamento</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/laboratorios/" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/7824107454547370" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> felipedennis@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Campus Avançado da UERN Natal</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/uernnatal/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="http://lattes.cnpq.br/7105829200193069" target="_blank" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Felipe Oliveira - Todos os direitos reservados</p>
+                <p class="footer-credits">Desenvolvido com amor por Jefferson da Silva Melo (frontend), Lucas Vítor Florêncio Borba (fullstack) e Yuri Dantas da Silva (backend)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
