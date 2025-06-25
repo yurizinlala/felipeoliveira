@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicações - Prof. Felipe Dennis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">G7BET</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="publicacoes.html" class="active">Publicações</a></li>
+                    <li><a href="orientacoes.html">Orientações</a></li>
+                    <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Publicações</h1>
+            <p>Artigos, livros e trabalhos publicados pelo professor</p>
+        </div>
+    </section>
+
+    <!-- Filtros de Publicações -->
+    <section class="publications-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="artigo">Artigos</button>
+                <button class="filter-btn" data-filter="livro">Livros</button>
+                <button class="filter-btn" data-filter="evento">Eventos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de Publicações -->
+    <section class="publications-list">
+        <div class="container">
+            <!-- Publicação 1 -->
+            <div class="publication-card" data-category="artigo">
+                <div class="publication-header">
+                    <h2>Um Framework para Escalonamento de Tarefas em Sistemas Embarcados de Tempo Real</h2>
+                    <span class="publication-badge artigo">Artigo</span>
+                </div>
+                <div class="publication-content">
+                    <div class="publication-info">
+                        <p><strong>Autores:</strong> Felipe Dennis M. de Oliveira, João Silva, Maria Santos</p>
+                        <p><strong>Revista:</strong> Journal of Real-Time Systems</p>
+                        <p><strong>Ano:</strong> 2024</p>
+                        <p><strong>DOI:</strong> 10.1000/xyz123</p>
+                    </div>
+                    <p class="publication-abstract">Este artigo apresenta um framework para escalonamento de tarefas em sistemas embarcados com restrições de tempo real, focando em aplicações com recursos limitados. O framework proposto utiliza uma abordagem híbrida que combina técnicas de escalonamento estático e dinâmico, adaptando-se às condições de carga do sistema.</p>
+                    
+                    <div class="publication-links">
+                        <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicação 2 -->
+            <div class="publication-card" data-category="livro">
+                <div class="publication-header">
+                    <h2>Sistemas Embarcados: Teoria e Prática</h2>
+                    <span class="publication-badge livro">Livro</span>
+                </div>
+                <div class="publication-content">
+                    <div class="publication-info">
+                        <p><strong>Autores:</strong> Felipe Dennis M. de Oliveira, Carlos Mendes</p>
+                        <p><strong>Editora:</strong> Editora Universitária</p>
+                        <p><strong>Ano:</strong> 2023</p>
+                        <p><strong>ISBN:</strong> 978-85-7777-777-7</p>
+                    </div>
+                    <p class="publication-abstract">Este livro apresenta os fundamentos teóricos e práticos dos sistemas embarcados, abordando desde conceitos básicos até aplicações avançadas. A obra inclui exemplos práticos, estudos de caso e exercícios, sendo indicada para estudantes e profissionais da área de computação e engenharia.</p>
+                    
+                    <div class="publication-links">
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fas fa-external-link-alt"></i> Link da Editora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicação 3 -->
+            <div class="publication-card" data-category="evento">
+                <div class="publication-header">
+                    <h2>Implementação de um Sistema IoT para Monitoramento Ambiental em Áreas Rurais</h2>
+                    <span class="publication-badge evento">Evento</span>
+                </div>
+                <div class="publication-content">
+                    <div class="publication-info">
+                        <p><strong>Autores:</strong> Felipe Dennis M. de Oliveira, Ana Costa, Pedro Almeida</p>
+                        <p><strong>Conferência:</strong> Simpósio Brasileiro de Sistemas Embarcados (SBSE)</p>
+                        <p><strong>Local:</strong> São Paulo, Brasil</p>
+                        <p><strong>Ano:</strong> 2023</p>
+                    </div>
+                    <p class="publication-abstract">Este trabalho apresenta o desenvolvimento e implementação de um sistema IoT de baixo custo para monitoramento ambiental em áreas rurais. O sistema utiliza sensores conectados a uma rede sem fio para coletar dados sobre temperatura, umidade, luminosidade e qualidade do ar, enviando-os para uma plataforma web para análise e visualização.</p>
+                    
+                    <div class="publication-links">
+                        <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="btn btn-outline"><i class="fas fa-file-powerpoint"></i> Apresentação</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicação 4 -->
+            <div class="publication-card" data-category="artigo">
+                <div class="publication-header">
+                    <h2>Análise de Desempenho de Algoritmos de Escalonamento em Sistemas de Tempo Real</h2>
+                    <span class="publication-badge artigo">Artigo</span>
+                </div>
+                <div class="publication-content">
+                    <div class="publication-info">
+                        <p><strong>Autores:</strong> Felipe Dennis M. de Oliveira, Roberto Fernandes</p>
+                        <p><strong>Revista:</strong> Revista Brasileira de Computação Aplicada</p>
+                        <p><strong>Ano:</strong> 2022</p>
+                        <p><strong>DOI:</strong> 10.1000/abc456</p>
+                    </div>
+                    <p class="publication-abstract">Este artigo apresenta uma análise comparativa de desempenho entre diferentes algoritmos de escalonamento utilizados em sistemas de tempo real. São avaliados aspectos como previsibilidade temporal, utilização de recursos e comportamento sob condições de sobrecarga, utilizando um ambiente de simulação desenvolvido especificamente para este estudo.</p>
+                    
+                    <div class="publication-links">
+                        <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="btn btn-outline" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publicação 5 -->
+            <div class="publication-card" data-category="evento">
+                <div class="publication-header">
+                    <h2>Desenvolvimento de um Laboratório Virtual para Ensino de Sistemas Embarcados</h2>
+                    <span class="publication-badge evento">Evento</span>
+                </div>
+                <div class="publication-content">
+                    <div class="publication-info">
+                        <p><strong>Autores:</strong> Felipe Dennis M. de Oliveira, Mariana Lima, José Santos</p>
+                        <p><strong>Conferência:</strong> Congresso Brasileiro de Educação em Engenharia (COBENGE)</p>
+                        <p><strong>Local:</strong> Brasília, Brasil</p>
+                        <p><strong>Ano:</strong> 2022</p>
+                    </div>
+                    <p class="publication-abstract">Este trabalho apresenta o desenvolvimento e implementação de um laboratório virtual para o ensino de sistemas embarcados, permitindo que estudantes realizem experimentos práticos remotamente. São descritos os aspectos técnicos da solução, bem como os resultados pedagógicos obtidos durante sua aplicação em disciplinas de graduação.</p>
+                    
+                    <div class="publication-links">
+                        <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>G7BET</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="publicacoes.html">Publicações</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="#" target="_blank">Departamento</a></li>
+                        <li><a href="#" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="#" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> email@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Departamento de Computação - UERN</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 G7BET - Todos os direitos reservados</p>
+                <p>Desenvolvido por Lucas Vítor Florêncio Borba</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Filtro de publicações
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const publicationCards = document.querySelectorAll('.publication-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover classe ativa de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adicionar classe ativa ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Obter categoria do filtro
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filtrar publicações
+                    publicationCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

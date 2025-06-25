@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientações - Prof. Felipe Dennis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">G7BET</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="publicacoes.html">Publicações</a></li>
+                    <li><a href="orientacoes.html" class="active">Orientações</a></li>
+                    <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Orientações</h1>
+            <p>Trabalhos orientados pelo professor</p>
+        </div>
+    </section>
+
+    <!-- Filtros de Orientações -->
+    <section class="orientations-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="andamento">Em Andamento</button>
+                <button class="filter-btn" data-filter="concluido">Concluídos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de Orientações -->
+    <section class="orientations-list">
+        <div class="container">
+            <h2>Trabalhos de Conclusão de Curso</h2>
+            
+            <!-- Orientação 1 -->
+            <div class="orientation-card" data-category="andamento">
+                <div class="orientation-header">
+                    <h3>Sistema de Monitoramento Remoto para Aplicações IoT</h3>
+                    <span class="orientation-badge andamento">Em Andamento</span>
+                </div>
+                <div class="orientation-content">
+                    <div class="orientation-info">
+                        <p><strong>Aluno:</strong> João Pedro Silva</p>
+                        <p><strong>Curso:</strong> Ciência da Computação</p>
+                        <p><strong>Período:</strong> 2024 - Atual</p>
+                    </div>
+                    <p class="orientation-abstract">Desenvolvimento de uma plataforma de monitoramento remoto para aplicações de Internet das Coisas (IoT), permitindo a coleta, processamento e visualização de dados de sensores distribuídos. A solução utiliza tecnologias embarcadas de baixo custo e consumo energético, integradas a uma infraestrutura de nuvem para armazenamento e análise de dados.</p>
+                </div>
+            </div>
+
+            <!-- Orientação 2 -->
+            <div class="orientation-card" data-category="concluido">
+                <div class="orientation-header">
+                    <h3>Implementação de um Sistema de Automação Residencial Utilizando ESP32</h3>
+                    <span class="orientation-badge concluido">Concluído</span>
+                </div>
+                <div class="orientation-content">
+                    <div class="orientation-info">
+                        <p><strong>Aluno:</strong> Maria Clara Santos</p>
+                        <p><strong>Curso:</strong> Ciência da Computação</p>
+                        <p><strong>Período:</strong> 2022 - 2023</p>
+                    </div>
+                    <p class="orientation-abstract">Desenvolvimento e implementação de um sistema de automação residencial de baixo custo utilizando o microcontrolador ESP32. O sistema permite o controle de iluminação, temperatura e segurança através de uma interface web e aplicativo móvel, com foco em usabilidade e eficiência energética.</p>
+                </div>
+            </div>
+
+            <!-- Orientação 3 -->
+            <div class="orientation-card" data-category="concluido">
+                <div class="orientation-header">
+                    <h3>Análise Comparativa de Algoritmos de Escalonamento para Sistemas de Tempo Real</h3>
+                    <span class="orientation-badge concluido">Concluído</span>
+                </div>
+                <div class="orientation-content">
+                    <div class="orientation-info">
+                        <p><strong>Aluno:</strong> Pedro Henrique Almeida</p>
+                        <p><strong>Curso:</strong> Ciência da Computação</p>
+                        <p><strong>Período:</strong> 2021 - 2022</p>
+                    </div>
+                    <p class="orientation-abstract">Estudo comparativo de diferentes algoritmos de escalonamento utilizados em sistemas de tempo real, avaliando aspectos como previsibilidade temporal, utilização de recursos e comportamento sob condições de sobrecarga. O trabalho incluiu a implementação de um ambiente de simulação para testes e validação dos algoritmos analisados.</p>
+                </div>
+            </div>
+
+            <h2>Iniciação Científica</h2>
+            
+            <!-- Orientação 4 -->
+            <div class="orientation-card" data-category="andamento">
+                <div class="orientation-header">
+                    <h3>Desenvolvimento de Soluções IoT para Agricultura de Precisão</h3>
+                    <span class="orientation-badge andamento">Em Andamento</span>
+                </div>
+                <div class="orientation-content">
+                    <div class="orientation-info">
+                        <p><strong>Aluno:</strong> Ana Beatriz Costa</p>
+                        <p><strong>Curso:</strong> Ciência e Tecnologia</p>
+                        <p><strong>Período:</strong> 2023 - Atual</p>
+                    </div>
+                    <p class="orientation-abstract">Pesquisa e desenvolvimento de soluções baseadas em Internet das Coisas (IoT) para aplicações de agricultura de precisão, com foco em monitoramento de condições ambientais, irrigação automatizada e otimização do uso de recursos. O projeto inclui a criação de protótipos de baixo custo e a validação em campo das soluções desenvolvidas.</p>
+                </div>
+            </div>
+
+            <!-- Orientação 5 -->
+            <div class="orientation-card" data-category="concluido">
+                <div class="orientation-header">
+                    <h3>Implementação de um Framework para Desenvolvimento de Aplicações de Tempo Real</h3>
+                    <span class="orientation-badge concluido">Concluído</span>
+                </div>
+                <div class="orientation-content">
+                    <div class="orientation-info">
+                        <p><strong>Aluno:</strong> Lucas Oliveira</p>
+                        <p><strong>Curso:</strong> Ciência da Computação</p>
+                        <p><strong>Período:</strong> 2022 - 2023</p>
+                    </div>
+                    <p class="orientation-abstract">Desenvolvimento de um framework para facilitar a criação de aplicações com restrições de tempo real, fornecendo abstrações para escalonamento de tarefas, gerenciamento de recursos e garantias temporais. O framework foi implementado em C++ e validado através de estudos de caso em diferentes domínios de aplicação.</p>
+                </div>
+            </div>
+
+            <h2>Mestrado</h2>
+            
+            <!-- Orientação 6 -->
+            <div class="orientation-card" data-category="andamento">
+                <div class="orientation-header">
+                    <h3>Técnicas de Otimização Energética para Sistemas Embarcados em Aplicações IoT</h3>
+                    <span class="orientation-badge andamento">Em Andamento</span>
+                </div>
+                <div class="orientation-content">
+                    <div class="orientation-info">
+                        <p><strong>Aluno:</strong> Roberto Fernandes</p>
+                        <p><strong>Programa:</strong> Mestrado em Ciência da Computação</p>
+                        <p><strong>Período:</strong> 2023 - Atual</p>
+                    </div>
+                    <p class="orientation-abstract">Pesquisa sobre técnicas de otimização energética para sistemas embarcados em aplicações de Internet das Coisas (IoT), com foco em dispositivos alimentados por baterias ou energia renovável. O trabalho investiga estratégias de hardware e software para redução do consumo energético, mantendo os requisitos funcionais e temporais das aplicações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>G7BET</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="publicacoes.html">Publicações</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="#" target="_blank">Departamento</a></li>
+                        <li><a href="#" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="#" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> email@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Departamento de Computação - UERN</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 G7BET - Todos os direitos reservados</p>
+                <p>Desenvolvido por Lucas Vítor Florêncio Borba</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Filtro de orientações
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const orientationCards = document.querySelectorAll('.orientation-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover classe ativa de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adicionar classe ativa ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Obter categoria do filtro
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filtrar orientações
+                    orientationCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

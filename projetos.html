@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Prof. Felipe Dennis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">G7BET</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                    <li><a href="projetos.html" class="active">Projetos</a></li>
+                    <li><a href="publicacoes.html">Publicações</a></li>
+                    <li><a href="orientacoes.html">Orientações</a></li>
+                    <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Projetos</h1>
+            <p>Conheça os projetos desenvolvidos pelo professor</p>
+        </div>
+    </section>
+
+    <!-- Filtros de Projetos -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="pesquisa">Pesquisa</button>
+                <button class="filter-btn" data-filter="ensino">Ensino</button>
+                <button class="filter-btn" data-filter="extensao">Extensão</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de Projetos -->
+    <section class="projects-list">
+        <div class="container">
+            <!-- Projeto 1 -->
+            <div class="project-card" data-category="pesquisa">
+                <div class="project-header">
+                    <h2>Sistema de Monitoramento Remoto para Aplicações IoT</h2>
+                    <span class="project-badge pesquisa">Pesquisa</span>
+                    <span class="project-status ongoing">Em andamento</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p><strong>Período:</strong> 2024 - Atual</p>
+                        <p><strong>Financiamento:</strong> UERN</p>
+                    </div>
+                    <p>Este projeto visa desenvolver uma plataforma de monitoramento remoto para aplicações de Internet das Coisas (IoT), permitindo a coleta, processamento e visualização de dados de sensores distribuídos. A solução utiliza tecnologias embarcadas de baixo custo e consumo energético, integradas a uma infraestrutura de nuvem para armazenamento e análise de dados.</p>
+                    
+                    <h3>Objetivos</h3>
+                    <ul>
+                        <li>Desenvolver hardware de sensoriamento com comunicação sem fio</li>
+                        <li>Implementar gateway para coleta e transmissão de dados</li>
+                        <li>Criar plataforma web para visualização e análise</li>
+                        <li>Validar o sistema em aplicações reais</li>
+                    </ul>
+                    
+                    <h3>Equipe</h3>
+                    <p>Prof. Felipe Dennis (Coordenador), 2 alunos de graduação, 1 aluno de mestrado</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Mais detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="project-card" data-category="ensino">
+                <div class="project-header">
+                    <h2>Laboratório Virtual de Sistemas Embarcados</h2>
+                    <span class="project-badge ensino">Ensino</span>
+                    <span class="project-status completed">Concluído</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p><strong>Período:</strong> 2022 - 2023</p>
+                        <p><strong>Financiamento:</strong> UERN</p>
+                    </div>
+                    <p>Desenvolvimento de um ambiente virtual para ensino de sistemas embarcados, permitindo que estudantes realizem experimentos práticos remotamente. O projeto incluiu a criação de simuladores, tutoriais interativos e hardware acessível remotamente para programação e testes.</p>
+                    
+                    <h3>Resultados</h3>
+                    <ul>
+                        <li>Plataforma web com 15 experimentos interativos</li>
+                        <li>Infraestrutura para acesso remoto a hardware real</li>
+                        <li>Material didático completo para disciplinas relacionadas</li>
+                        <li>Utilizado por mais de 200 alunos durante o período de pandemia</li>
+                    </ul>
+                    
+                    <h3>Equipe</h3>
+                    <p>Prof. Felipe Dennis (Coordenador), 3 alunos de graduação</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Mais detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project-card" data-category="extensao">
+                <div class="project-header">
+                    <h2>Automação para Pequenos Produtores Rurais</h2>
+                    <span class="project-badge extensao">Extensão</span>
+                    <span class="project-status ongoing">Em andamento</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p><strong>Período:</strong> 2023 - Atual</p>
+                        <p><strong>Financiamento:</strong> UERN / Parceria com Cooperativa Local</p>
+                    </div>
+                    <p>Projeto de extensão que visa desenvolver e implementar soluções de automação de baixo custo para pequenos produtores rurais da região. As soluções incluem sistemas de irrigação automatizada, monitoramento de condições ambientais e controle de estufas, utilizando tecnologias acessíveis e de fácil manutenção.</p>
+                    
+                    <h3>Ações</h3>
+                    <ul>
+                        <li>Oficinas de capacitação para produtores rurais</li>
+                        <li>Desenvolvimento de protótipos adaptados à realidade local</li>
+                        <li>Implementação de sistemas-piloto em propriedades selecionadas</li>
+                        <li>Acompanhamento e suporte técnico contínuo</li>
+                    </ul>
+                    
+                    <h3>Equipe</h3>
+                    <p>Prof. Felipe Dennis (Coordenador), 4 alunos de graduação, 1 técnico</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Mais detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 4 -->
+            <div class="project-card" data-category="pesquisa">
+                <div class="project-header">
+                    <h2>Escalonamento de Tarefas em Sistemas de Tempo Real</h2>
+                    <span class="project-badge pesquisa">Pesquisa</span>
+                    <span class="project-status completed">Concluído</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p><strong>Período:</strong> 2021 - 2022</p>
+                        <p><strong>Financiamento:</strong> CNPq</p>
+                    </div>
+                    <p>Pesquisa focada no desenvolvimento e análise de algoritmos de escalonamento para sistemas de tempo real, com ênfase em aplicações críticas. O projeto investigou técnicas para garantir previsibilidade temporal em sistemas com recursos limitados e restrições de energia.</p>
+                    
+                    <h3>Resultados</h3>
+                    <ul>
+                        <li>Desenvolvimento de novo algoritmo de escalonamento</li>
+                        <li>Implementação de framework para testes e validação</li>
+                        <li>Publicação de 2 artigos em conferências internacionais</li>
+                        <li>Geração de software open-source para a comunidade</li>
+                    </ul>
+                    
+                    <h3>Equipe</h3>
+                    <p>Prof. Felipe Dennis (Coordenador), 1 aluno de mestrado, 2 alunos de graduação</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline">Mais detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>G7BET</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="publicacoes.html">Publicações</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="#" target="_blank">Departamento</a></li>
+                        <li><a href="#" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="#" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> email@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Departamento de Computação - UERN</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 G7BET - Todos os direitos reservados</p>
+                <p>Desenvolvido por Lucas Vítor Florêncio Borba</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Filtro de projetos
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover classe ativa de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adicionar classe ativa ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Obter categoria do filtro
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filtrar projetos
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

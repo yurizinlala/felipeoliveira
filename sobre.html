@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Prof. Felipe Oliveira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Botão de Acessibilidade -->
+    <div class="accessibility-widget">
+        <button class="accessibility-toggle" aria-label="Opções de acessibilidade">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="accessibility-options">
+            <button class="font-size-increase" aria-label="Aumentar fonte">
+                <i class="fas fa-plus"></i> Aumentar fonte
+            </button>
+            <button class="font-size-decrease" aria-label="Diminuir fonte">
+                <i class="fas fa-minus"></i> Diminuir fonte
+            </button>
+            <button class="contrast-toggle" aria-label="Alto contraste">
+                <i class="fas fa-adjust"></i> Alto contraste
+            </button>
+            <button class="reset-accessibility" aria-label="Resetar acessibilidade">
+                <i class="fas fa-undo"></i> Resetar
+            </button>
+        </div>
+    </div>
+
+    <!-- Botão de Acessibilidade VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Felipe Oliveira</a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
+                    <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                    <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section class="about-section section-animated">
+        <div class="container">
+            <div class="about-header">
+                <div class="about-title fade-in">
+                    <h1 class="title-animation">Sobre o Professor</h1>
+                    <p class="subtitle fade-in delay-1">Conheça mais sobre Felipe Dennis Mendonça de Oliveira</p>
+                    <a href="http://lattes.cnpq.br/7105829200193069" class="btn btn-primary fade-in delay-2" target="_blank">
+                        <span><i class="fas fa-graduation-cap"></i> Currículo Lattes</span>
+                    </a>
+                </div>
+                <div class="about-image fade-in delay-3">
+                    <div class="img-hover-zoom">
+                        <img src="img/foto_perfil.png" alt="Foto do Professor Felipe Oliveira" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografia Completa -->
+    <section class="bio-complete section-animated">
+        <div class="container">
+            <h2 class="text-left">Biografia</h2>
+            <div class="bio-content fade-in text-left">
+                <p>Professor do Departamento de Computação da Universidade do Estado do Rio Grande do Norte (UERN), com foco em pesquisas nas áreas de Sistemas Embarcados e Sistemas de Tempo Real. Doutor pelo Programa de Pós-Graduação em Engenharia Elétrica e de Computação - PPGEEC/UFRN, Mestre pelo Programa de Pós-Graduação em Engenharia Elétrica e de Computação - PPGEEC/UFRN.</p>
+                
+                <p>Atualmente é professor Adjunto IV (com Dedicação Exclusiva) da Universidade do Estado do Rio Grande do Norte - UERN do Curso Superior de Ciências da Computação, lotado no Campus de Natal. Líder do GSET - Grupo de Sistemas Distribuídos e de Tempo Real.</p>
+                
+                <p>Possui experiência na área de Ciência da Computação, com ênfase em Redes de Computadores (com e sem fio), Sistemas Distribuídos, Sistemas Embarcados, IoT e Hardware. Coordenador do Laboratório de Sistemas Embarcados e de Tempo Real (LUMEN), onde desenvolve projetos de pesquisa, ensino e extensão com alunos dos cursos de Computação e Ciência e Tecnologia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação Acadêmica -->
+    <section class="education-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Formação Acadêmica</h2>
+            <div class="education-list">
+                <div class="education-item fade-in">
+                    <p class="education-period">2009 - 2015</p>
+                    <h3 class="education-degree">Doutorado em Engenharia Elétrica e de Computação</h3>
+                    <p class="education-institution">Universidade Federal do Rio Grande do Norte (UFRN)</p>
+                    <p>Tese: "FTE-LEACH: Um Protocolo Energeticamente Eficiente e Tolerante à Falhas Aplicado às Redes Industriais de Sensores sem Fio"</p>
+                </div>
+                <div class="education-item fade-in delay-1">
+                    <p class="education-period">2006 - 2009</p>
+                    <h3 class="education-degree">Mestrado em Engenharia Elétrica e de Computação</h3>
+                    <p class="education-institution">Universidade Federal do Rio Grande do Norte (UFRN)</p>
+                    <p>Dissertação: "Desenvolvimento de um Software de Comunicação sem Fio Aplicado à Instrumentação de Unidade de Elevação de Petróleo Tipo Plunger Lift"</p>
+                </div>
+                <div class="education-item fade-in delay-2">
+                    <p class="education-period">2010 - 2014</p>
+                    <h3 class="education-degree">Graduação em Sistemas de Informação</h3>
+                    <p class="education-institution">Universidade Estácio de Sá (UNESA)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section class="experience-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Experiência Profissional</h2>
+            <div class="experience-list">
+                <div class="experience-item fade-in">
+                    <p class="experience-period">2010 - Atual</p>
+                    <h3 class="experience-position">Professor Adjunto IV</h3>
+                    <p class="experience-company">Universidade do Estado do Rio Grande do Norte (UERN)</p>
+                    <p>Atuação como professor no Departamento de Computação, ministrando disciplinas relacionadas a Sistemas Embarcados, Programação e Arquitetura de Computadores.</p>
+                </div>
+                <div class="experience-item fade-in delay-1">
+                    <p class="experience-period">2018 - Atual</p>
+                    <h3 class="experience-position">Líder do Grupo de Pesquisa GSET</h3>
+                    <p class="experience-company">Grupo de Sistemas Embarcados e de Tempo Real</p>
+                    <p>Coordenação do grupo de pesquisa, desenvolvendo projetos e orientando alunos em iniciação científica, TCC e mestrado.</p>
+                </div>
+                <div class="experience-item fade-in delay-2">
+                    <p class="experience-period">2019 - Atual</p>
+                    <h3 class="experience-position">Coordenador do Laboratório LUMEN</h3>
+                    <p class="experience-company">Laboratório de Sistemas Embarcados e de Tempo Real</p>
+                    <p>Gestão do laboratório, captação de recursos para projetos e coordenação de equipes de desenvolvimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de Interesse -->
+    <section class="interests-section section-animated">
+        <div class="container">
+            <h2 class="text-left">Áreas de Interesse</h2>
+            <div class="interest-grid grid-3x3">
+                <div class="interest-item fade-in">
+                    <div class="interest-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Sistemas Embarcados</h3>
+                </div>
+                <div class="interest-item fade-in delay-1">
+                    <div class="interest-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Sistemas de Tempo Real</h3>
+                </div>
+                <div class="interest-item fade-in delay-2">
+                    <div class="interest-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Internet das Coisas (IoT)</h3>
+                </div>
+                <div class="interest-item fade-in delay-3">
+                    <div class="interest-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automação e Robótica</h3>
+                </div>
+                <div class="interest-item fade-in delay-4">
+                    <div class="interest-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programação de Baixo Nível</h3>
+                </div>
+                <div class="interest-item fade-in delay-5">
+                    <div class="interest-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança em Sistemas Embarcados</h3>
+                </div>
+                <div class="interest-item fade-in delay-6">
+                    <div class="interest-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Redes de Sensores sem Fio</h3>
+                </div>
+                <div class="interest-item fade-in delay-7">
+                    <div class="interest-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Sistemas Distribuídos</h3>
+                </div>
+                <div class="interest-item fade-in delay-8">
+                    <div class="interest-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligência Computacional</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Felipe Oliveira</h3>
+                    <p>Prof. Felipe Dennis Mendonça de Oliveira</p>
+                    <a href="admin.html" class="btn btn-sm btn-outline login-btn">Login</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="areas-pesquisa.html">Áreas de Pesquisa</a></li>
+                        <li><a href="laboratorio.html">Laboratório LUMEN</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="https://portal.uern.br/" target="_blank">UERN</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/" target="_blank">Departamento</a></li>
+                        <li><a href="https://portal.uern.br/natal/dcc/laboratorios/" target="_blank">Laboratório LUMEN</a></li>
+                        <li><a href="http://dgp.cnpq.br/dgp/espelhogrupo/7824107454547370" target="_blank">GSET</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> felipedennis@uern.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Campus Avançado da UERN Natal</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/uernnatal/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="http://lattes.cnpq.br/7105829200193069" target="_blank" aria-label="Lattes"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Felipe Oliveira - Todos os direitos reservados</p>
+                <p class="footer-credits">Desenvolvido com amor por Jefferson da Silva Melo (frontend), Lucas Vítor Florêncio Borba (fullstack) e Yuri Dantas da Silva (backend)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

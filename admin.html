@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Prof. Felipe Oliveira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header admin-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Felipe Oliveira</a>
+            </div>
+            <div class="admin-user-info">
+                <span id="admin-username">Carregando...</span>
+                <button id="logout-btn" class="btn btn-sm btn-outline"><i class="fas fa-sign-out-alt"></i> Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="admin-main">
+        <!-- Tela de Login -->
+        <div id="login-container" class="login-container">
+            <div class="login-box">
+                <h2>Painel Administrativo</h2>
+                <form id="login-form" class="login-form">
+                    <div class="form-group">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><span>Entrar</span></button>
+                </form>
+                <div id="login-message" class="message-container"></div>
+            </div>
+        </div>
+
+        <!-- Painel Administrativo -->
+        <div id="admin-panel" class="admin-panel hidden">
+            <div class="container">
+                <div class="admin-sidebar">
+                    <nav class="admin-nav">
+                        <ul>
+                            <li><a href="#dashboard" class="admin-nav-item active" data-section="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                            <li><a href="#messages" class="admin-nav-item" data-section="messages"><i class="fas fa-envelope"></i> Mensagens</a></li>
+                            <li><a href="#content" class="admin-nav-item" data-section="content"><i class="fas fa-edit"></i> Conteúdo</a></li>
+                            <li><a href="#settings" class="admin-nav-item" data-section="settings"><i class="fas fa-cog"></i> Configurações</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="admin-content">
+                    <!-- Dashboard -->
+                    <section id="dashboard-section" class="admin-section">
+                        <h2>Dashboard</h2>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Total de Visitas</h3>
+                                    <p id="total-visits">Carregando...</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Mensagens Recebidas</h3>
+                                    <p id="total-messages">Carregando...</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Mensagens Recentes</h3>
+                                    <p id="recent-messages">Carregando...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-charts">
+                            <div class="chart-container">
+                                <h3>Páginas Mais Visitadas</h3>
+                                <div id="top-pages-chart" class="chart">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Página</th>
+                                                <th>Visitas</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="top-pages-table">
+                                            <tr>
+                                                <td colspan="2">Carregando...</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Mensagens -->
+                    <section id="messages-section" class="admin-section hidden">
+                        <h2>Mensagens Recebidas</h2>
+                        <div class="messages-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Email</th>
+                                        <th>Assunto</th>
+                                        <th>Data</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="messages-table">
+                                    <tr>
+                                        <td colspan="5">Carregando mensagens...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="message-details" class="message-details hidden">
+                            <div class="message-header">
+                                <h3 id="message-subject">Assunto da Mensagem</h3>
+                                <button class="btn btn-sm btn-outline close-details"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="message-info">
+                                <p><strong>De:</strong> <span id="message-name">Nome do Remetente</span> (<span id="message-email">email@exemplo.com</span>)</p>
+                                <p><strong>Data:</strong> <span id="message-date">01/01/2025</span></p>
+                            </div>
+                            <div class="message-content">
+                                <p id="message-text">Conteúdo da mensagem...</p>
+                            </div>
+                            <div class="message-actions">
+                                <button class="btn btn-primary reply-btn"><i class="fas fa-reply"></i> Responder</button>
+                                <button class="btn btn-outline delete-btn"><i class="fas fa-trash"></i> Excluir</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Conteúdo -->
+                    <section id="content-section" class="admin-section hidden">
+                        <h2>Gerenciamento de Conteúdo</h2>
+                        <div class="content-tabs">
+                            <button class="tab-btn active" data-tab="areas-pesquisa">Áreas de Pesquisa</button>
+                            <button class="tab-btn" data-tab="sobre">Sobre</button>
+                            <button class="tab-btn" data-tab="laboratorio">Laboratório</button>
+                        </div>
+                        <div class="tab-content">
+                            <!-- Áreas de Pesquisa -->
+                            <div id="areas-pesquisa-tab" class="tab-pane active">
+                                <h3>Áreas de Pesquisa</h3>
+                                <div class="content-actions">
+                                    <button class="btn btn-primary add-content-btn"><i class="fas fa-plus"></i> Adicionar Novo</button>
+                                </div>
+                                <div class="content-list" id="research-content-list">
+                                    <div class="content-item">
+                                        <div class="content-item-header">
+                                            <h4>Sistemas Embarcados</h4>
+                                            <div class="content-item-actions">
+                                                <button class="btn btn-sm btn-outline edit-btn"><i class="fas fa-edit"></i></button>
+                                                <button class="btn btn-sm btn-outline delete-btn"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="content-item-body">
+                                            <p>Desenvolvimento de sistemas embarcados para aplicações de tempo real.</p>
+                                        </div>
+                                        <div class="content-item-footer">
+                                            <span class="content-category">Pesquisa</span>
+                                            <span class="content-date">Última atualização: 15/06/2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sobre -->
+                            <div id="sobre-tab" class="tab-pane">
+                                <h3>Informações Sobre</h3>
+                                <div class="content-form">
+                                    <div class="form-group">
+                                        <label for="bio-content">Biografia</label>
+                                        <textarea id="bio-content" rows="10" class="content-editor"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="education-content">Formação Acadêmica</label>
+                                        <textarea id="education-content" rows="10" class="content-editor"></textarea>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button class="btn btn-primary save-content-btn"><i class="fas fa-save"></i> Salvar Alterações</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Laboratório -->
+                            <div id="laboratorio-tab" class="tab-pane">
+                                <h3>Laboratório LUMEN</h3>
+                                <div class="content-form">
+                                    <div class="form-group">
+                                        <label for="lab-description">Descrição do Laboratório</label>
+                                        <textarea id="lab-description" rows="10" class="content-editor"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lab-infrastructure">Infraestrutura</label>
+                                        <textarea id="lab-infrastructure" rows="10" class="content-editor"></textarea>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button class="btn btn-primary save-content-btn"><i class="fas fa-save"></i> Salvar Alterações</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Configurações -->
+                    <section id="settings-section" class="admin-section hidden">
+                        <h2>Configurações</h2>
+                        <div class="settings-container">
+                            <div class="settings-card">
+                                <h3>Alterar Senha</h3>
+                                <form id="change-password-form" class="settings-form">
+                                    <div class="form-group">
+                                        <label for="current-password">Senha Atual</label>
+                                        <input type="password" id="current-password" name="current-password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new-password">Nova Senha</label>
+                                        <input type="password" id="new-password" name="new-password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm-password">Confirmar Nova Senha</label>
+                                        <input type="password" id="confirm-password" name="confirm-password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"><span>Alterar Senha</span></button>
+                                </form>
+                                <div id="password-message" class="message-container"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer admin-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Felipe Oliveira - Painel Administrativo</p>
+                <p class="footer-credits">Desenvolvido com amor por Jefferson da Silva Melo (frontend), Lucas Vítor Florêncio Borba (fullstack) e Yuri Dantas da Silva (backend)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Edição/Adição de Conteúdo -->
+    <div id="content-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Adicionar Conteúdo</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="content-form">
+                    <div class="form-group">
+                        <label for="content-title">Título</label>
+                        <input type="text" id="content-title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content-category">Categoria</label>
+                        <select id="content-category" name="category" required>
+                            <option value="pesquisa">Pesquisa</option>
+                            <option value="publicacao">Publicação</option>
+                            <option value="orientacao">Orientação</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="content-text">Conteúdo</label>
+                        <textarea id="content-text" name="content" rows="10" required></textarea>
+                    </div>
+                    <input type="hidden" id="content-id" name="id">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline cancel-btn">Cancelar</button>
+                <button class="btn btn-primary save-btn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirmação</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="confirm-message">Tem certeza que deseja realizar esta ação?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline cancel-btn">Cancelar</button>
+                <button class="btn btn-primary confirm-btn">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script></body>
+</html>
+
